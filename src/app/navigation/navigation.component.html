@@ -1,0 +1,18 @@
+<nav>    
+    <button mat-stroked-button [matMenuTriggerFor]="menu">Functions</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/teachers" *ngIf="this.api.isLoggedIn()">List Teachers</button>
+        <button mat-menu-item routerLink="/subjects" *ngIf="this.api.isLoggedIn()">List Subjects</button>
+        <button mat-menu-item routerLink="/create-teacher" *ngIf="this.api.isLoggedIn()">Create Teacher</button>
+    </mat-menu>
+
+    <button mat-flat-button color="accent" routerLink="/login" *ngIf="!this.api.isLoggedIn()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="login"></mat-icon>
+        Login
+    </button>
+    
+    <button mat-stroked-button color="accent" [routerLink]="['/logout']" *ngIf="this.api.isLoggedIn()">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">logout</mat-icon>
+        Logout
+    </button>
+</nav>

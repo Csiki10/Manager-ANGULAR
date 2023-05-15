@@ -1,0 +1,74 @@
+h1 {
+    margin-bottom: 50px;
+}
+
+.switchDisplay{
+    display: none;
+}
+
+mat-form-field, mat-checkbox, button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.btnWidt {
+    width: 100%;
+    background-color: rgb(255, 217, 0);
+}
+
+#editTeacher {
+    min-height: 300px;
+    background-color: rgba(144, 238, 144, 0.541);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    .btn {
+        margin-right: 1em;
+    }
+}
+
+mat-card {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    max-width: 500px;
+    float: left;
+}
+
+mat-card {
+    mat-divider {
+        margin: 10px 0;
+    }
+}
+
+mat-card {
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        border: 1px solid #d6d6d6;
+    }
+}
+
+mat-card {
+    button {
+        font-size: 0.8em;
+    }
+}
+
+.teacher-id {
+    font-size: 0.8em;
+    color: #929292;
+}
+
+#clear {
+    clear: both;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: rgb(192, 3, 3)
+}
